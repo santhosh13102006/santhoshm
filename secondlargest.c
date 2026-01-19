@@ -3,9 +3,6 @@
 
 int secondLargest(int arr[], int n) 
 {
-    if (n < 2)
-        return -1;
-
     int largest = INT_MIN;
     int secondLargest = INT_MIN;
 
@@ -27,7 +24,7 @@ int secondLargest(int arr[], int n)
 
 int main() 
 {
-    int arr[] = {34,25,23,21,456,89,543,0};
+    int arr[] = {34,25,23,21,46,89,543,0};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     printf("Second Largest element in array : %d\n", secondLargest(arr, n));
