@@ -3,8 +3,7 @@
 int removeduplicates(int nums[], int n) {
     if (n == 0)
         return 0;
-
-    int k = 1;  // index for unique elements
+  int k = 1; 
 
     for (int i = 1; i < n; i++) {
         if (nums[i] != nums[i - 1]) {
@@ -12,9 +11,8 @@ int removeduplicates(int nums[], int n) {
             k++;
         }
     }
-    return k;  // number of unique elements
+    return k;  
 }
-
 int main() {
    int n;
    printf("enter number of elements in array:");
@@ -34,3 +32,4 @@ int main() {
     return 0;
 
 }
+
