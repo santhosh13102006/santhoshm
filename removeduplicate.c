@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int removeDuplicates(int nums[], int n) {
+int removeduplicates(int nums[], int n) {
     if (n == 0)
         return 0;
 
@@ -24,12 +24,13 @@ int main() {
    for(int i=0;i<n;i++){
    scanf("%d",&nums[i]);}
 
-    int k = removeDuplicates(nums, n);
+    int k = removeduplicates(nums, n);
 
-    printf("Unique elements:\n");
+    printf("elements without duplicate:\n");
     for (int i = 0; i < k; i++) {
         printf("%d ", nums[i]);
     }
 
     return 0;
+
 }
